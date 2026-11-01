@@ -1,0 +1,36 @@
+$schema: https://azuremlschemas.azureedge.net/latest/sweepJob.schema.json
+type: sweep
+trial:
+  code: .
+  command: >-
+    python train.py
+    --data ${{inputs.data}}
+    --n_estimators ${{search_space.n_estimators}}
+    --max_depth ${{search_space.max_depth}}
+    --min_samples_split ${{search_space.min_samples_split}}
+  environment: azureml:AzureML-sklearn-1.0-ubuntu20.04-py38-cpu@latest
+inputs:
+  data:
+    type: uri_file
+    path: azureml:student-performance:1
+compute: azureml:cpu-cluster
+search_space:
+  n_estimators:
+    type: choice
+    values: [10, 50, 100]
+  max_depth:
+    type: choice
+    values: [3, 5, 10]
+  min_samples_split:
+    type: choice
+    values: [2, 5]
+objective:
+  goal: minimize
+  primary_metric: rmse
+sampling_algorithm: random
+limits:
+  max_total_trials: 8
+  max_concurrent_trials: 2
+  timeout: 3600
+display_name: exp10-hyperdrive-rf-mathscore
+experiment_name: exp10-hyperdrive
