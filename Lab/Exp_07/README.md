@@ -75,13 +75,15 @@ Power BI connection, in Power BI Service: Get data from Azure SQL Database, serv
 
 ## Screenshots, Section 6 of the PDF
 
+Screenshots are stored in the screenshots/ subfolder of Lab/Exp_07, not in the Exp_07 root.
+
 Real browser screenshots of the saved Power BI Service report, captured 2026-11-01, not replotted charts:
 
-- screenshot_powerbi_report_all.jpg: Page 1 at 50 percent, all 5 visual groups in one view.
-- screenshot_powerbi_report_top.jpg: Page 1 at 100 percent, top, KPI cards, column chart, bar chart.
-- screenshot_powerbi_report_bottom.jpg: Page 1 at 100 percent, lower part, donut chart by Gender and FinalGrade table.
-- screenshot_powerbi_semantic_model.jpg: semantic model settings, last refresh succeeded 11/1/2026, 7:50:00 PM.
-- screenshot_powerbi_semantic_model_refresh.jpg: cloud connection calab-sql-141.database.windows.net, database calab-db-141, and Refresh section, Import mode evidence.
+- screenshots/screenshot_powerbi_report_all.jpg: Page 1 at 50 percent, all 5 visual groups in one view.
+- screenshots/screenshot_powerbi_report_top.jpg: Page 1 at 100 percent, top, KPI cards, column chart, bar chart.
+- screenshots/screenshot_powerbi_report_bottom.jpg: Page 1 at 100 percent, lower part, donut chart by Gender and FinalGrade table.
+- screenshots/screenshot_powerbi_semantic_model.jpg: semantic model settings, last refresh succeeded 11/1/2026, 7:50:00 PM.
+- screenshots/screenshot_powerbi_semantic_model_refresh.jpg: cloud connection calab-sql-141.database.windows.net, database calab-db-141, and Refresh section, Import mode evidence.
 
 ## Files
 
