@@ -1,0 +1,3 @@
+$schema: https://azuremlschemas.azureedge.net/latest/managedOnlineEndpoint.schema.json
+name: mathscore-endpoint-141
+auth_mode: key
