@@ -12,7 +12,7 @@ To connect Power BI to an Azure SQL Database and create a dashboard that shows s
 
 Azure Blob Storage (calablake141, rawdata, student_performance.csv) is copied by Azure Data Factory (calab-adf-141, pipeline PL_Exp07_BlobToSql) into Azure SQL Database (calab-sql-141, calab-db-141, table StudentPerformance). Power BI Service connects to that database through a semantic model refresh, so a change in the database is visible after the semantic model is refreshed.
 
-![Architecture diagram](architecture_diagram.png)
+![Architecture diagram](images/architecture_diagram.png)
 
 ## Resources
 
@@ -87,11 +87,13 @@ Real browser screenshots of the saved Power BI Service report, captured 2026-11-
 
 ## Files
 
+Image files are stored in the images/ subfolder of Lab/Exp_07, not in the Exp_07 root.
+
 Code files are stored in the code/ subfolder of Lab/Exp_07, not in the Exp_07 root.
 
-- architecture_diagram.png: data flow diagram.
-- dashboard_avg_by_grade.png: average scores by FinalGrade, from the real 50 rows, earlier plotted chart, not used in the PDF Screenshots section.
-- dashboard_grade_counts.png: student count by FinalGrade, from the real 50 rows, earlier plotted chart, not used in the PDF Screenshots section.
+- images/architecture_diagram.png: data flow diagram.
+- images/dashboard_avg_by_grade.png: average scores by FinalGrade, from the real 50 rows, earlier plotted chart, not used in the PDF Screenshots section.
+- images/dashboard_grade_counts.png: student count by FinalGrade, from the real 50 rows, earlier plotted chart, not used in the PDF Screenshots section.
 - code/create_table.sql: table definition used by the ADF preCopyScript.
 - code/dashboard_queries.sql: queries for the dashboard tables and averages.
 - code/pipeline_PL_Exp07_BlobToSql.json: ADF pipeline definition, without connection secrets.
