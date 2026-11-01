@@ -1,0 +1,22 @@
+$schema: https://azuremlschemas.azureedge.net/latest/automlJob.schema.json
+type: automl
+task: classification
+training_data:
+  path: azureml:student-performance-table:2
+  type: mltable
+target_column_name: FinalGrade
+primary_metric: accuracy
+compute: azureml:cpu-cluster
+limits:
+  max_trials: 10
+  timeout_minutes: 60
+  enable_early_termination: true
+training:
+  enable_model_explainability: false
+featurization:
+  mode: auto
+display_name: exp12-automl-finalgrade
+experiment_name: exp12-automl
+validation_data:
+  path: azureml:student-performance-table:2
+  type: mltable
