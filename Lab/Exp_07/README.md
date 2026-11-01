@@ -87,12 +87,14 @@ Real browser screenshots of the saved Power BI Service report, captured 2026-11-
 
 ## Files
 
+Code files are stored in the code/ subfolder of Lab/Exp_07, not in the Exp_07 root.
+
 - architecture_diagram.png: data flow diagram.
 - dashboard_avg_by_grade.png: average scores by FinalGrade, from the real 50 rows, earlier plotted chart, not used in the PDF Screenshots section.
 - dashboard_grade_counts.png: student count by FinalGrade, from the real 50 rows, earlier plotted chart, not used in the PDF Screenshots section.
-- create_table.sql: table definition used by the ADF preCopyScript.
-- dashboard_queries.sql: queries for the dashboard tables and averages.
-- pipeline_PL_Exp07_BlobToSql.json: ADF pipeline definition, without connection secrets.
+- code/create_table.sql: table definition used by the ADF preCopyScript.
+- code/dashboard_queries.sql: queries for the dashboard tables and averages.
+- code/pipeline_PL_Exp07_BlobToSql.json: ADF pipeline definition, without connection secrets.
 
 ## Cost guard
 
