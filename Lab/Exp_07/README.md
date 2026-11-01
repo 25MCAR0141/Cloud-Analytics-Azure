@@ -73,11 +73,21 @@ Visuals on Page 1, verified in the editor:
 
 Power BI connection, in Power BI Service: Get data from Azure SQL Database, server calab-sql-141.database.windows.net, database calab-db-141, Microsoft account authentication, table StudentPerformance. No SQL password was used for the Power BI connection.
 
+## Screenshots, Section 6 of the PDF
+
+Real browser screenshots of the saved Power BI Service report, captured 2026-11-01, not replotted charts:
+
+- screenshot_powerbi_report_all.jpg: Page 1 at 50 percent, all 5 visual groups in one view.
+- screenshot_powerbi_report_top.jpg: Page 1 at 100 percent, top, KPI cards, column chart, bar chart.
+- screenshot_powerbi_report_bottom.jpg: Page 1 at 100 percent, lower part, donut chart by Gender and FinalGrade table.
+- screenshot_powerbi_semantic_model.jpg: semantic model settings, last refresh succeeded 11/1/2026, 7:50:00 PM.
+- screenshot_powerbi_semantic_model_refresh.jpg: cloud connection calab-sql-141.database.windows.net, database calab-db-141, and Refresh section, Import mode evidence.
+
 ## Files
 
 - architecture_diagram.png: data flow diagram.
-- dashboard_avg_by_grade.png: average scores by FinalGrade, from the real 50 rows.
-- dashboard_grade_counts.png: student count by FinalGrade, from the real 50 rows.
+- dashboard_avg_by_grade.png: average scores by FinalGrade, from the real 50 rows, earlier plotted chart, not used in the PDF Screenshots section.
+- dashboard_grade_counts.png: student count by FinalGrade, from the real 50 rows, earlier plotted chart, not used in the PDF Screenshots section.
 - create_table.sql: table definition used by the ADF preCopyScript.
 - dashboard_queries.sql: queries for the dashboard tables and averages.
 - pipeline_PL_Exp07_BlobToSql.json: ADF pipeline definition, without connection secrets.
